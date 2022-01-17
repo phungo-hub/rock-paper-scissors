@@ -77,8 +77,8 @@ function gameResult() {
 
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
-        let oneRound = playRound(button.id, computerPlay());
         if (initPlayerScore < 5 && initComputerScore < 5) {
+        let oneRound = playRound(button.id, computerPlay());
             if (oneRound === "player won") {
                 initPlayerScore += 1;
                 playerScore.textContent = initPlayerScore;
@@ -101,5 +101,6 @@ reset.addEventListener('click', () => {
         playerScore.textContent = initPlayerScore;
         initComputerScore = 0;
         computerScore.textContent = initComputerScore;
+        announce.textContent = "";
         result.textContent = "";
 })
