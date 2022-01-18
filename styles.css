@@ -116,7 +116,7 @@ h1 {
 }
 
 .announce {
-  width: 500px;
+  width: auto;
 }
 
 .player_score {
